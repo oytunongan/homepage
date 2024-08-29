@@ -1,0 +1,62 @@
+body {
+    background-color: #704BC5;
+    color: white;
+}
+
+header {
+    background-color: #C5AB4B;
+    text-align: center;
+    font-family: tahoma;
+    text-shadow: 1px 1px 5px white;
+    font-size: 50px;
+    height: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer {
+    text-align: left;
+    font-family: helvetica;
+    font-size: 10px;
+    height: 50px;
+    padding-left: 30px;
+    vertical-align: bottom;
+}
+
+nav {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.texts {
+    float: left;
+    font-family: monospace;
+    text-align: left;
+    font-size: 25px;
+    color: yellow;
+}
+
+.cell1 {
+    height: 300px;
+    width: 100px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.cell2 {
+    height: 300px;
+    width: 1000px;
+    text-align: left;
+    vertical-align: top;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+#comm {
+    height: 200px;
+    width: 400px;
+    vertical-align: top;
+}
+
+input[type="text"] ::placeholder {
+    vertical-align: top;
+}

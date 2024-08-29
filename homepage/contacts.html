@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <script>
+            function Thank() {
+                let first = document.querySelector('#fname').value;
+                let last = document.querySelector('#lname').value;
+                alert('Thank you, ' + first + ' ' + last);
+            }
+        </script>
+        <title>Oytun's Webpage</title>
+    </head>
+    <body>
+        <header><b>Welcome to Oytun's Webpage</b></header>
+        <table>
+            <tr>
+                <td class="cell1">
+                    <nav class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                        <button onclick="location.href='index.html';" type="button" class="btn btn-dark">Home</button>
+                        <button onclick="location.href='about.html';" type="button" class="btn btn-dark">About</button>
+                        <button onclick="location.href='photos.html';"type="button" class="btn btn-dark">Photos</button>
+                        <button onclick="location.href='contacts.html';"type="button" class="btn btn-dark">Contacts</button>
+                    </nav>
+                </td>
+                <td class="cell2">
+                    <article class="texts">
+                        <form onsubmit="Thank()">
+                            <p><input id="fname" autocomplete="off" placeholder="Name" type="text"></p>
+                            <p><input id="lname" autocomplete="off" placeholder="Surname" type="text"></p>
+                            <p><input id="comm" autocomplete="off" placeholder="Message" type="text" align="top"></p>
+                            <p><button id="send" type="submit">Send</button></p>
+                        </form>
+                    </article>
+                </td>
+            </tr>
+        </table>
+        <footer><i>Prepared by Oytun ONGAN for CS50 homework purpose</i></footer>
+    </body>
+</html>
